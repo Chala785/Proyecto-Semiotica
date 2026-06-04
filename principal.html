@@ -7,55 +7,22 @@
     <title>Conecta Bienes Raíces</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Estilos.css">
-
+    <link rel="stylesheet" href="/Principal/style.css">
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="/Assets/global.css">
     <!-- ICONOS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--Favicon-->
-    <link rel="icon" href="IMG/Logo.jpeg" type="image/x-icon">
+    <link rel="icon" href="/Assets/IMG/Logo.jpeg" type="image/x-icon">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
+<!--Navbar-->
+<div id="navbar"></div>
 
-        <div class="nav-container">
-
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="IMG/Logo.jpeg" alt="Conecta Bienes Raíces">
-            </div>
-
-            <!-- MENÚ -->
-            <div class="nav-menu" id="nav-menu">
-
-                <a href="#">Inicio</a>
-                <a href="../Nosotros/nosotros.html">Nosotros</a>
-                <a href="../Propiedades/propiedades.html">Propiedades</a>
-                <a href="../Contactanos/contactanos.html">Contáctanos</a>
-
-                <a href="../Iniciar_sesion/iniciar_sesion.html" class="login-btn">
-                    Iniciar Sesión
-                </a>
-
-                <!-- CARRITO -->
-                <a href="#" class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-
-            </div>
-
-            <!-- HAMBURGUESA -->
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-        </div>
-
-    </nav>
-
+   
     <!-- HERO -->
 <section class="hero">
 
@@ -117,7 +84,7 @@
 
         <!-- TARJETA 1 -->
         <div class="prop-card">
-            <img src="IMG/Finca1.jpeg" alt="Finca campestre" class="prop-img">
+            <img src="/Assets/IMG/Finca1.jpeg" alt="Finca campestre" class="prop-img">
             <div class="prop-body">
                 <h3 class="prop-titulo">Finca campestre</h3>
                 <p class="prop-precio">$350.000.000</p>
@@ -134,7 +101,7 @@
 
         <!-- TARJETA 2 -->
         <div class="prop-card">
-            <img src="IMG/Apartamento.jpeg" alt="Apartamento" class="prop-img">
+            <img src="/Assets/IMG/Apartamento.jpeg" alt="Apartamento" class="prop-img">
             <div class="prop-body">
                 <h3 class="prop-titulo">Apartamento</h3>
                 <p class="prop-precio">$800.000.000</p>
@@ -151,7 +118,7 @@
 
         <!-- TARJETA 3 -->
         <div class="prop-card">
-            <img src="IMG/Parcelacion.jpeg" alt="Lote" class="prop-img">
+            <img src="/Assets/IMG/Parcelacion.jpeg" alt="Lote" class="prop-img">
             <div class="prop-body">
                 <h3 class="prop-titulo">Lote</h3>
                 <p class="prop-precio">$150.000.000</p>
@@ -268,82 +235,15 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<div id="footer"></div>
 
-    <div class="footer-container">
-
-        <!-- COLUMNA 1: LOGO + DESCRIPCIÓN -->
-        <div class="footer-col">
-            <img src="IMG/Logo.jpeg" alt="Conecta Bienes Raíces" class="footer-logo">
-            <p class="footer-desc">Conectamos personas con su propiedad ideal. Transparencia, confianza y acompañamiento en cada paso.</p>
-            <div class="footer-redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-        </div>
-
-        <!-- COLUMNA 2: ENLACES -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Navegación</h4>
-            <ul class="footer-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
-                <li><a href="../Propiedades/propiedades.html">Propiedades</a></li>
-                <li><a href="../Contactanos/contactanos.html">Contáctanos</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMNA 3: SERVICIOS -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Servicios</h4>
-            <ul class="footer-links">
-                <li><a href="#">Compra de inmuebles</a></li>
-                <li><a href="#">Arrendamiento</a></li>
-                <li><a href="#">Avalúos</a></li>
-                <li><a href="#">Asesoría jurídica</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMNA 4: CONTACTO -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Contacto</h4>
-            <ul class="footer-contacto">
-                <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Calle 50 #40-20, Medellín, Antioquia</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+57 300 123 4567</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>info@conectabienesraices.com</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-clock"></i>
-                    <span>Lun – Sáb: 8:00am – 6:00pm</span>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- BARRA INFERIOR -->
-    <div class="footer-bottom">
-        <p>© 2025 Conecta Bienes Raíces. Todos los derechos reservados.</p>
-        <p>Diseñado con <i class="fa-solid fa-heart"></i> en Colombia</p>
-    </div>
-
-</footer>
-
-    <script src="index.js"></script>
-    <!-- WHATSAPP FLOTANTE -->
+<!-- WHATSAPP FLOTANTE -->
     <a href="https://wa.me/573234924247" target="_blank" class="whatsapp-flotante">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+    <script src="/Principal/script.js"></script>
+    <script src="/Assets/global.js"></script>
+    
 
 </body>
 
