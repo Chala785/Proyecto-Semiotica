@@ -1,0 +1,110 @@
+/* SECCIÓN PROPIEDADES */
+.propiedades {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.seccion-titulo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* TARJETA */
+.prop-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEN */
+.prop-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CUERPO */
+.prop-body {
+    padding: 14px 16px 16px;
+}
+
+.prop-titulo {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.prop-precio {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2E6311;
+    margin-bottom: 4px;
+}
+
+.prop-ciudad {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 14px;
+}
+
+/* PIE DE TARJETA */
+.prop-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prop-iconos {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+    color: #444;
+}
+
+.ver-btn {
+    background: #2E6311;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.ver-btn:hover {
+    background: #2E6311;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

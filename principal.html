@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Bienes Raíces</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Principal/style.css">
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="/Assets/global.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Favicon-->
+    <link rel="icon" href="/Assets/IMG/Logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+<!--Navbar-->
+<div id="navbar"></div>
+
+   
+    <!-- HERO -->
+<section class="hero">
+
+    <div class="hero-tabs">
+        <button class="tab-btn active" data-tab="arrendar">Arrendar</button>
+        <button class="tab-btn" data-tab="comprar">Comprar</button>
+    </div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">Encuentra tu <span>propiedad ideal</span></h1>
+
+        <div class="hero-filter">
+
+            <select class="filter-select" id="tipo">
+                <option value="">¿Qué tipo de inmueble?</option>
+                <option>Casa</option>
+                <option>Apartamento</option>
+                <option>Local</option>
+                <option>Oficina</option>
+                <option>Bodega</option>
+                <option>Lote</option>
+            </select>
+
+            <div class="filter-divider"></div>
+
+            <select class="filter-select" id="ciudad">
+                <option value="">Ciudad</option>
+                <option>Medellín</option>
+                <option>Bogotá</option>
+                <option>Cali</option>
+                <option>Barranquilla</option>
+                <option>Cartagena</option>
+            </select>
+
+            <div class="filter-divider"></div>
+
+            <button class="location-btn">
+                <i class="fa-solid fa-location-dot"></i>
+                Busca por ubicación
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="search-btn">
+                Buscar <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+<br>
+<h1 style="text-align: center; font-size: 30px;">Propiedades destacadas</h1>
+<p style="text-align: center; ">Explora nuestras propiedades destacadas de la semana.</p>
+
+<!--Tarjetas-->
+<!-- SECCIÓN PROPIEDADES -->
+<section class="propiedades">
+    <div class="cards-grid">
+
+        <!-- TARJETA 1 -->
+        <div class="prop-card">
+            <img src="/Assets/IMG/Finca1.jpeg" alt="Finca campestre" class="prop-img">
+            <div class="prop-body">
+                <h3 class="prop-titulo">Finca campestre</h3>
+                <p class="prop-precio">$350.000.000</p>
+                <p class="prop-ciudad">Medellín</p>
+                <div class="prop-footer">
+                    <div class="prop-iconos">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <a href="#" class="ver-btn">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TARJETA 2 -->
+        <div class="prop-card">
+            <img src="/Assets/IMG/Apartamento.jpeg" alt="Apartamento" class="prop-img">
+            <div class="prop-body">
+                <h3 class="prop-titulo">Apartamento</h3>
+                <p class="prop-precio">$800.000.000</p>
+                <p class="prop-ciudad">La Ceja</p>
+                <div class="prop-footer">
+                    <div class="prop-iconos">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <a href="#" class="ver-btn">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TARJETA 3 -->
+        <div class="prop-card">
+            <img src="/Assets/IMG/Parcelacion.jpeg" alt="Lote" class="prop-img">
+            <div class="prop-body">
+                <h3 class="prop-titulo">Lote</h3>
+                <p class="prop-precio">$150.000.000</p>
+                <p class="prop-ciudad">Envigado</p>
+                <div class="prop-footer">
+                    <div class="prop-iconos">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <a href="#" class="ver-btn">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="trayectoria">
+
+   
+    <h2 class="tray-titulo">Nuestra <span>trayectoria</span></h2>
+
+    <div class="tray-grid">
+
+        <div class="tray-card">
+            <div class="tray-icono">
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div class="tray-numero">+ 28</div>
+            <div class="tray-linea"></div>
+            <p class="tray-label">Años de experiencia</p>
+        </div>
+
+        <div class="tray-card">
+            <div class="tray-icono">
+                <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="tray-numero">+ 46</div>
+            <div class="tray-linea"></div>
+            <p class="tray-label">Proyectos comercializados</p>
+        </div>
+
+        <div class="tray-card">
+            <div class="tray-icono">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="tray-numero">+ 4017</div>
+            <div class="tray-linea"></div>
+            <p class="tray-label">Inmuebles vendidos</p>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+
+    <p class="test-subtitulo">Lo que dicen de nosotros</p>
+    <h2 class="test-titulo">Nuestros clientes <span>opinan</span></h2>
+
+    <div class="carrusel-wrap">
+        <div class="carrusel-track" id="carrusel-track">
+
+            <div class="test-card">
+                <div class="test-comilla">"</div>
+                <p class="test-texto">El proyecto soñado por mi familia. Quedé muy satisfecha con el servicio de la inmobiliaria. Desde el primer momento me brindaron asesoría clara, acompañamiento constante y mucha transparencia en todo el proceso. Me ayudaron a encontrar una propiedad que realmente se ajusta a mis necesidades.</p>
+                <div class="test-estrellas">★★★★★</div>
+                <div class="test-autor">
+                    <div class="test-avatar">MG</div>
+                    <div>
+                        <p class="test-nombre">Mary Luz Gaviria</p>
+                        <p class="test-cargo">Compradora · Medellín</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-card">
+                <div class="test-comilla">"</div>
+                <p class="test-texto">Un equipo excepcional. El proceso de arrendamiento fue ágil y sin contratiempos. Siempre estuvieron disponibles para resolver mis dudas y me acompañaron en cada paso. Sin duda los recomendaría a cualquier persona que esté buscando un inmueble.</p>
+                <div class="test-estrellas">★★★★★</div>
+                <div class="test-autor">
+                    <div class="test-avatar">JR</div>
+                    <div>
+                        <p class="test-nombre">Juan Restrepo</p>
+                        <p class="test-cargo">Arrendatario · Envigado</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-card">
+                <div class="test-comilla">"</div>
+                <p class="test-texto">Vendí mi apartamento en tiempo récord y al precio justo. El equipo fue transparente en todo momento y me mantuvo informada durante cada etapa. ¡Totalmente satisfecha con el resultado y el trato recibido!</p>
+                <div class="test-estrellas">★★★★★</div>
+                <div class="test-autor">
+                    <div class="test-avatar">LP</div>
+                    <div>
+                        <p class="test-nombre">Laura Pérez</p>
+                        <p class="test-cargo">Vendedora · La Ceja</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="carrusel-controles">
+        <button class="cbtn" id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="carrusel-dots" id="carrusel-dots"></div>
+        <button class="cbtn" id="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/573234924247" target="_blank" class="whatsapp-flotante">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="/Principal/script.js"></script>
+    <script src="/Assets/global.js"></script>
+    
+
+</body>
+
+</html>
