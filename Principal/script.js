@@ -1,4 +1,17 @@
+// BOTONES ARRENDAR / COMPRAR
+const tabs = document.querySelectorAll('.tab-btn');
 
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+
+        // Quitar active de todos
+        tabs.forEach(t => t.classList.remove('active'));
+
+        // Agregar active al seleccionado
+        tab.classList.add('active');
+
+    });
+});
 
 // CARRUSEL TESTIMONIOS
 (function () {
