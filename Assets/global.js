@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     navMenu.classList.toggle("active");
                 });
             }
+
+            // ← AGREGA ESTO: ahora que el navbar ya existe en el DOM
+            actualizarContador();
         });
 
     // Footer

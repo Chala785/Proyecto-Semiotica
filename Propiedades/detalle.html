@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de propiedad</title>
+    <link rel="stylesheet" href="/Propiedades/detalle.css">
+    <link rel="stylesheet" href="/Assets/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="/Assets/IMG/Logo.jpeg" type="image/x-icon">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<main class="detalle-container">
+    <a href="/propiedades.html  " class="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver
+    </a>
+
+    <img id="det-img" src="" alt="" class="detalle-img">
+
+    <div class="detalle-info">
+        <h1 id="det-titulo"></h1>
+        <p id="det-precio" class="det-precio"></p>
+        <p id="det-ciudad" class="det-ciudad">
+            <i class="fa-solid fa-location-dot"></i>
+            <span></span>
+        </p>
+
+        <div class="det-stats">
+            <div class="stat">
+                <i class="fa-solid fa-bed"></i>
+                <span id="det-hab"></span>
+                <small>Habitaciones</small>
+            </div>
+            <div class="stat">
+                <i class="fa-solid fa-bath"></i>
+                <span id="det-banos"></span>
+                <small>Baños</small>
+            </div>
+            <div class="stat">
+                <i class="fa-solid fa-ruler-combined"></i>
+                <span id="det-area"></span>
+                <small>m² construidos</small>
+            </div>
+        </div>
+
+        <p id="det-descripcion" class="det-descripcion"></p>
+
+        <button class="btn-comprar" onclick="agregarAlCarrito()">
+        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+        </button>
+
+        
+    </div>
+</main>
+
+<div id="footer"></div>
+<!--Global-->
+<script src="/Assets/global.js"></script>
+<!--Script del carrito-->
+<script src="/Assets/carrito.js"></script>
+
+<script>
+
+    function agregarAlCarrito() {
+    const datos = JSON.parse(localStorage.getItem('propiedadSeleccionada'));
+    if (!datos) return;
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    // Evitar duplicados
+    const yaExiste = carrito.some(p => p.titulo === datos.titulo && p.precio === datos.precio);
+    if (yaExiste) {
+        alert('Esta propiedad ya está en tu carrito.');
+        return;
+    }
+
+    carrito.push(datos);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    
+    // Abrir el panel
+    if (typeof abrirCarrito === 'function') abrirCarrito();
+    }
+
+    const datos = JSON.parse(localStorage.getItem('propiedadSeleccionada'));
+
+    if (datos) {
+        document.title = datos.titulo + ' — Conecta Bienes Raíces';
+        document.getElementById('det-img').src = datos.img;
+        document.getElementById('det-img').alt = datos.titulo;
+        document.getElementById('det-titulo').textContent = datos.titulo;
+        document.getElementById('det-precio').textContent = datos.precio;
+        document.querySelector('#det-ciudad span').textContent = datos.ciudad;
+        document.getElementById('det-hab').textContent = datos.habitaciones;
+        document.getElementById('det-banos').textContent = datos.banos;
+        document.getElementById('det-area').textContent = datos.area;
+        document.getElementById('det-descripcion').textContent = datos.descripcion;
+    } else {
+        // Si alguien entra directo sin datos, lo devuelve
+        window.location.href = '/Propiedades/propiedades.html';
+    }
+
+    
+</script>
+
+
+</body>
+</html>
