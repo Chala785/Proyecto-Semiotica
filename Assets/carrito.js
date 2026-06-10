@@ -1,4 +1,4 @@
-// ─── CREAR EL PANEL EN EL DOM ───────────────────────────────────────────────
+// CREAR EL PANEL EN EL DOM
 const carritoHTML = `
 <div id="carrito-overlay" onclick="cerrarCarrito()"></div>
 
@@ -86,7 +86,7 @@ function enviarWhatsApp() {
         `Hola! Estoy interesado en las siguientes propiedades:\n\n${mensaje}\n\n¿Me pueden dar más información?`
     );
 
-    window.open(`https://wa.me/573234924247?text=${texto}`, '_blank');
+    window.open(`https://wa.me/+573103989930?text=${texto}`, '_blank');
 }
 
 function actualizarContador() {

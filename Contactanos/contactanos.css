@@ -323,3 +323,34 @@ body {
       }
     }
 
+
+/* ── VALIDACIÓN JQUERY: campo con error ── */
+.campo-error {
+    border-color: #E24B4A !important;
+    box-shadow: 0 0 0 3px rgba(226, 75, 74, 0.12) !important;
+}
+
+/* Mensaje de error debajo del campo */
+.error-msg {
+    display: block;
+    color: #A32D2D;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* Mensaje de éxito al enviar el formulario */
+#form-exito {
+    display: none;
+    background: #E1F5EE;
+    color: #0F6E56;
+    border: 1px solid #5DCAA5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
